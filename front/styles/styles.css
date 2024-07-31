@@ -1,0 +1,387 @@
+#encabezado {
+    background-color: #1c1c1c;
+    color: #d5d5d5;
+    cursor: default;
+    height: 5em;
+    left: 0;
+    line-height: 5em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+}
+
+#encabezado .contenedor {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#encabezado .logo {
+    font-family: 'Pacifico', cursive;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    color: #e5474b;
+    font-size: 3em;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#encabezado .logo:hover {
+    color: rgba(229, 71, 75, 0.75);
+}
+
+#navegador {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navegador a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    padding: 0 2em;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#navegador a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#navegador a.active {
+    background: #7d392a;
+    border-radius: 0px;
+    color: #FFF;
+}
+
+        /* Imagen fondo */
+#banner
+        {
+            position: relative;
+            padding: 20em 20em;
+            max-width: 100%;
+            height: auto;
+            background: url(../imagenes/cine&series.webp) no-repeat center;
+            background-size: cover;
+            color: #fff;
+        }
+        #banner .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        #banner .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: slide 16s infinite;
+        }
+        
+        #banner .image1 {
+            background-image: url(../imagenes/Troya2.jpg);
+            animation-delay: 4s;
+        }
+        
+        #banner .image2 {
+            background-image: url(../imagenes/guardianes.avif);
+            animation-delay: 8s;
+        }
+        
+        #banner .image3 {
+            background-image: url(../imagenes/lotr.jpg);
+            animation-delay: 12s;
+        }
+        
+        @keyframes slide {
+            0%, 25% {
+                opacity: 1;
+            }
+            33%, 100% {
+                opacity: 0;
+            }
+        }
+
+        #banner h1 {
+            position: absolute;
+            top: 70%; /* Ajusta según sea necesario */
+            left: 15%; /* Ajusta según sea necesario */
+            transform: translate(-50%, -50%); /* Centra el texto */
+            font-size: 4em; /* Ajusta el tamaño de la fuente según sea necesario */
+            color: #ffffff; /* Ajusta el color del texto según sea necesario */
+            font-family: Georgia, serif; /* Aplica la fuente Georgia */
+               }
+        #banner span {
+            position: absolute;
+            top: 70%; /* Ajusta según sea necesario */
+            left: 40%; /* Ajusta según sea necesario */
+            transform: translate(-50%, -50%); /* Centra el texto */
+            font-size: 2em; /* Ajusta el tamaño de la fuente según sea necesario */
+            color: #ffffff; /* Ajusta el color del texto según sea necesario */
+            font-family: Georgia, serif; /* Aplica la fuente Georgia */
+        }
+        .button {
+            display: inline-block;
+            position: absolute;
+            top: 80%; /* Ajusta según sea necesario */
+            left: 50%; /* Ajusta según sea necesario */
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border: 3px solid #fff;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 2em; /* Ajusta el tamaño de la letra aquí */
+        }
+        
+        .button.alt {
+            background-color: transparent;
+            border-color: #fff;
+        }
+        
+        .button.alt:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+/*Banner para la Historia */
+#banner-historia
+        {
+            position: sticky;
+            padding: 28em 28em;
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            background: url(../imagenes/guardianes.jpg) no-repeat center;
+            background-size: cover;
+            color: #fff;
+        }
+        #banner-historia h1 {
+            position: absolute;
+            top: 30%; /* Ajusta según sea necesario */
+            left: 15%; /* Ajusta según sea necesario */
+            transform: translate(-50%, -50%); /* Centra el texto */
+            font-size: 4em; /* Ajusta el tamaño de la fuente según sea necesario */
+            color: #ffffff; /* Ajusta el color del texto según sea necesario */
+            font-family: Georgia, serif; /* Aplica la fuente Georgia */
+               }
+        #banner-historia span {
+            position: absolute;
+            top: 70%; /* Ajusta según sea necesario */
+            left: 40%; /* Ajusta según sea necesario */
+            transform: translate(-50%, -50%); /* Centra el texto */
+            font-size: 2em; /* Ajusta el tamaño de la fuente según sea necesario */
+            color: #ffffff; /* Ajusta el color del texto según sea necesario */
+            font-family: Georgia, serif; /* Aplica la fuente Georgia */
+        }
+
+
+/*Banner para el Acerca */
+#banner-acerca
+{
+    position: sticky;
+    padding: 28em 28em;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    background: url(../imagenes/starwars.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+#banner-acerca h1 {
+    position: absolute;
+    top: 30%; /* Ajusta según sea necesario */
+    left: 20%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    font-size: 4em; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #ffffff; /* Ajusta el color del texto según sea necesario */
+    font-family: Georgia, serif; /* Aplica la fuente Georgia */
+       }
+#banner-acerca span {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85); /* Texto semi-transparente */
+    display: block;
+    position: absolute;
+    top: 70%; /* Ajusta según sea necesario */
+    left: 40%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra el texto */
+}
+
+/*Estilo para el contenedor de las peliculas*/
+
+#contenedor-peliculas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            background-color:  #1c1c1c; /* Cambia el color de fondo aquí */
+        }
+        
+        .tarjeta {
+            background: #ffffff;
+            border: 5px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.2s;
+            margin-left: 3%;
+        }
+        
+        .tarjeta:hover {
+            transform: scale(1.2);
+        }
+        
+        .tarjeta img {
+            width: 300px; /* Establece el ancho fijo */
+            height: 450px; /* Establece la altura fija */
+            object-fit: cover; /* Mantiene el aspecto de la imagen dentro del contenedor */
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tarjeta a {
+            text-decoration: none;
+        }
+        .tarjeta h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            margin: 0.5em 0;
+            color: #e5474b;
+        }
+        .tarjeta p {
+            margin: 0.5em 1em;
+            text-align: left;
+            font-family: "Lato", sans-serif;
+            font-size: 14pt;
+            font-weight: 300;
+            line-height: 2;
+            }
+        
+        .tarjeta strong {
+            font-weight: bold;
+        }
+
+
+/*Estilos para GALERIA*/
+body {
+    background: linear-gradient(135deg, #0d0d0d, #333333); /* Degradado de negro a gris oscuro */
+    background-repeat: no-repeat;
+}
+
+.header-galeria{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.cine {
+    height: 33em; /* Ajusta esta altura según sea necesario */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.h1-galeria{
+    color: #ffffff;
+    font-size: 3em; /* Ajustado el tamaño de fuente para mejor equilibrio */
+    text-align: center; /* Centrando el texto */
+    margin-top: 5%;
+    margin-bottom: 2%;
+
+}
+
+/* Ajustar el texto debajo de H1 para que sea más ancho */
+.galeria-fondo span {
+    color: #dcdcdc; /* Texto de color más suave para buen contraste */
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+    display: block; /* Para que ocupe toda la línea y se centre mejor */
+    margin: 0 auto 1em; /* Espacio entre el texto y el botón */
+    max-width: 1200px; /* Limita el ancho del texto */
+    text-align: center; /* Mantén el texto centrado */
+}
+
+/* Asegurar que el h5 de la descripción esté alineado en la parte inferior de la imagen */
+.carousel-caption {
+    bottom: 20px; /* Alinea el texto en la parte inferior de la imagen */
+    text-align: center; /* Centra el texto */
+    left: 0;
+    right: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la imagen */
+}
+
+.carousel-caption h5, .carousel-caption p {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+    display: inline-block;
+    max-width: 90%;
+}
+
+
+
+/*PIE DE PAGINA*/
+.footer {
+    background-color: #1c1c1c; /* Mismo color de fondo que el header */
+    color: #d5d5d5;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 3%;
+}
+
+.footer .contenedor {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.footer nav a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}

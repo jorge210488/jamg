@@ -29,4 +29,13 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
+  {
+    title: "Troya <br><br>",
+    year: 2004,
+    director: "Wolfgang Petersen",
+    duration: "2h 43 min",
+    genre: ["Action", "Epic", "Drama"],
+    rate: 7,
+    poster:"/imagenes/troya.jpg",
+  },
 ];
