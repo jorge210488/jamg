@@ -1,0 +1,130 @@
+#encabezado {
+    background-color: #1c1c1c;
+    color: #d5d5d5;
+    cursor: default;
+    height: 5em;
+    left: 0;
+    line-height: 5em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+    margin-bottom: 5%;
+}
+
+#encabezado .contenedor {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#encabezado .logo {
+    font-family: 'Pacifico', cursive;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    color: #e5474b;
+    font-size: 3em;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#encabezado .logo:hover {
+    color: rgba(229, 71, 75, 0.75);
+}
+
+#navegador {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navegador a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    padding: 0 2em;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#navegador a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#navegador a.active {
+    background: #7d392a;
+    border-radius: 0px;
+    color: #FFF;
+}
+/*Banner para la Historia */
+#banner-historia
+        {
+            position: sticky;
+            padding: 20em 20em;
+            background: url(../imagenes/guardianes.jpg) no-repeat center;
+            background-size: cover;
+            color: #fff;
+        }
+
+body {
+    background: linear-gradient(135deg, #0d0d0d, #333333); /* Degradado de negro a gris oscuro */
+    background-repeat: no-repeat;
+}
+
+
+/*PIE DE PAGINA*/
+.footer {
+    background-color: #1c1c1c; /* Mismo color de fondo que el header */
+    color: #d5d5d5;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 0%;
+}
+
+.footer .contenedor {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.footer nav a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
