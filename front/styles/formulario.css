@@ -1,5 +1,4 @@
 #encabezado {
-    background-color: #1c1c1c;
     color: #d5d5d5;
     cursor: default;
     height: 5em;
@@ -10,7 +9,7 @@
     top: 0;
     width: 100%;
     z-index: 10001;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 
 #encabezado .contenedor {
@@ -21,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 
 #encabezado .logo {
@@ -71,41 +70,38 @@
     color: #FFF;
 }
 /*Banner para la Historia */
-#banner-historia
-        {
-            position: sticky;
-            padding: 20em 20em;
-            background: url(../imagenes/guardianes.jpg) no-repeat center;
-            background-size: cover;
-            color: #fff;
-        }
 
 body {
-    background: linear-gradient(135deg, #0d0d0d, #333333); /* Degradado de negro a gris oscuro */
-    background-repeat: no-repeat;
+    padding: 14% 15%;
+    background: url(../imagenes/guardianes.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    font-size: 1.5em;
 }
 
 
 /*PIE DE PAGINA*/
 .footer {
-    background-color: #1c1c1c; /* Mismo color de fondo que el header */
     color: #d5d5d5;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: auto;
     bottom: 0;
-    margin-top: 0%;
+    padding: 1.5em 0em;
+    border-top: 1px solid #303030;
 }
 
 .footer .contenedor {
-    max-width: 80%;
-    width: 100%;
+    width: auto;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 
 .footer p {
