@@ -34,17 +34,17 @@
             ¿Cúal es el nombre de la película?
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-1 mb-1">
           <label for="validationCustom02">Año</label>
-          <input type="number" class="form-control" id="validationCustom02" placeholder="Año" required onfocus="this.placeholder=''" onblur="this.placeholder='Ejemplo: 2004'">
+          <input type="number" class="form-control" id="validationCustom02" placeholder="Año" required onfocus="this.placeholder=''" onblur="this.placeholder='Ej: 2004'">
           <div class="valid-feedback">
             Excelente!
           </div>
           <div class="invalid-feedback">
-            ¿En que año se estreno?
+            Requerido
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-5 mb-3">
           <label for="validationCustom03">Género</label>
           <input type="text" class="form-control" id="validationCustom01" placeholder="Género" required onfocus="this.placeholder=''" onblur="this.placeholder='Ejemplo: Acción, Drama, Historia'">
           <div class="valid-feedback">
@@ -73,11 +73,11 @@
             Agrega el nombre del director
           </div>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-1 mb-3">
           <label for="validationCustom05">Evaluación</label>
-          <input type="number" class="form-control" id="validationCustom05" placeholder="Evaluación" min="0" max="10" step="0.1" required required onfocus="this.placeholder=''" onblur="this.placeholder='9.9'">
+          <input type="number" class="form-control" id="validationCustom05" placeholder="Rate" min="0" max="10" step="0.1" required required onfocus="this.placeholder=''" onblur="this.placeholder='9.9'">
           <div class="invalid-feedback">
-            Es necesario que evalues la película
+            Requerido
           </div>
         </div>
       </div>
@@ -89,10 +89,8 @@
           Excelente!
         </div>
         <div class="invalid-feedback">
-          Es necesaria una duración de la película
+          Es necesaria la duración
         </div>
-      
-
       </div>
     </div>
       <div class="form-group">
@@ -106,7 +104,8 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Agregar Película</button>
+      <button class="btn btn-danger" type="submit">Agregar Película</button>
+      <button class="btn btn-danger" type="reset">Limpiar Formulario</button>
     </form>
     
     <script>
@@ -138,7 +137,6 @@
       </nav>
     </div>
   </footer>
-    <script src="./scripts/index.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

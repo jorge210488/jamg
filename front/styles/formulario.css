@@ -81,7 +81,9 @@ body {
 }
 
 form{
-    font-size: 1.5em;
+    font-size: 1.6em;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -93,6 +95,7 @@ form{
     bottom: 0;
     padding: 1.5em 0em;
     border-top: 1px solid #303030;
+    text-align: center;
 }
 
 .footer .contenedor {
@@ -124,3 +127,5 @@ form{
 .footer nav a:hover {
     color: rgba(255, 255, 255, 0.75);
 }
+
+
