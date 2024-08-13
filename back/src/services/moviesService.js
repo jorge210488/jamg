@@ -22,9 +22,9 @@ class Movieclass {
 module.exports = {
     getMovies: async () => { 
         try {
-            const moviesData = await Movie.find();
-            const movies = moviesData.map(movie => new Movieclass(
-                movie._id.toString(), // Convertir ObjectId a string
+            const movieData = await Movie.find();
+            const movies = movieData.map(movie => new Movieclass(
+                movie._id.toString(), // Convertir ObjectId a un string
                 movie.title, 
                 movie.year, 
                 movie.director, 

@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 
-console.log('Mongo URI:', process.env.MONGO_URI);
+// console.log('Mongo URI:', process.env.MONGO_URI);
 
 const dbCon = async () => {
     try {
