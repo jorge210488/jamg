@@ -17,9 +17,7 @@ let traerTarjeta = (data) => {
 
         return tarjeta;
     });
-
-    console.log('Tarjetas creadas:', tarjetas); // Verificar las tarjetas creadas
-    contenedorPeliculas.append(...tarjetas);
+    contenedorPeliculas?.append(...tarjetas);
     
 }
 

@@ -90,7 +90,7 @@ form{
 /*PIE DE PAGINA*/
 .footer {
     color: #d5d5d5;
-    position: absolute;
+    position: fixed;
     width: auto;
     bottom: 0;
     padding: 1.5em 0em;
