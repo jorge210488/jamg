@@ -20,19 +20,36 @@ describe("En la función CarritoCompra", () => {
         expect(carrito.carrito).toBeDefined();
         expect(carrito.producto).toBeUndefined(); // Verifica que la instancia de CarritoCompra tenga la propiedad carrito pero no la propiedad producto
     });
+
+    it("Debe agregar al carrito un producto", () => {
+        const miCarrito = new CarritoCompra;
+        miCarrito.agregarProducto({
+            name: "Producto1",
+            price: 150,
+            quantity: 1,
+        });
+        expect(miCarrito.carrito).toHaveLength(1);
+        expect(miCarrito.carrito[0]).toEqual({
+            name: "Producto1",
+            price: 150,
+            quantity: 1,
+        });
+    });
+    
     it("Calcula total con un solo producto agregado", () => {
         const carrito = new CarritoCompra(); 
         carrito.agregarProducto({ nombre: 'Producto 1', precio: 100 });
         expect(carrito.calcularTotal()).toEqual(100); // Verifica que el total sea 100 después de agregar un producto 
-        expect(carrito.aplicarDescuento(20)).toEqual(80);
+        expect(carrito.aplicarDescuento(20)).toEqual(80);// Verifica que el total sea 80 después de agregar un producto y aplicar un descuento 
     });
+
     it("Calcula total con varios productos agregados", () => {
         const carrito = new CarritoCompra(); 
         carrito.agregarProducto({ nombre: 'Producto 1', precio: 100 });
         carrito.agregarProducto({ nombre: 'Producto 2', precio: 200 });
         carrito.agregarProducto({ nombre: 'Producto 3', precio: 300 });
         carrito.agregarProducto({ nombre: 'Producto 4', precio: 400 });
-        expect(carrito.calcularTotal()).toEqual(1000); // Verifica que el total sea 1000 después de agregar un producto 
+        expect(carrito.calcularTotal()).toEqual(1000); // Verifica que el total sea 1000 después de agregar los 4 productos
         expect(carrito.aplicarDescuento(10)).toEqual(900); // Verifica que el total sea 900 después de aplicar 10% de descuento 
         expect(carrito.aplicarDescuento(20)).toEqual(800);// Verifica que el total sea 800 después de aplicar 20% de descuento 
         expect(carrito.aplicarDescuento(30)).toEqual(700);// Verifica que el total sea 700 después de aplicar 30% de descuento
