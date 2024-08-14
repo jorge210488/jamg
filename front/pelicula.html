@@ -75,7 +75,7 @@
         </div>
         <div class="col-md-1 mb-3">
           <label for="rate">Evaluación</label>
-          <input type="number" class="form-control" id="rate" placeholder="Rate" min="0" max="10" step="0.1" required required onfocus="this.placeholder=''" onblur="this.placeholder='9.9'">
+          <input type="number" class="form-control" id="rate" placeholder="Rate" min="0" max="10" step="0.1" required onfocus="this.placeholder=''" onblur="this.placeholder='9.9'">
           <div class="invalid-feedback">
             Requerido
           </div>
@@ -84,7 +84,7 @@
       <div class="form-row">
       <div class="col-md-3 mb-3">
         <label for="duration">Duración pelicula</label>
-        <input type="text" class="form-control" id="duration" placeholder="Ejemplo: 2hr y 58min" required onfocus="this.placeholder=''" onblur="this.placeholder='Ejemplo: 2hr y 58min'">
+        <input type="text" class="form-control" id="duration" placeholder="Ejemplo: 2hr y 58min" required onfocus="this.placeholder=''" onblur="this.placeholder='Ejemplo: 2h 58min'">
         <div class="valid-feedback">
           Excelente!
         </div>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <button class="btn btn-danger" type="submit">Agregar Película</button>
-      <button class="btn btn-danger" type="reset">Limpiar Formulario</button>
+      <button class="btn btn-danger" type="button" id="clear">Limpiar Formulario</button>
     </form>
 </section>
   <footer class="footer">

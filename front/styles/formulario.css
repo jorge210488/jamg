@@ -69,15 +69,20 @@
     border-radius: 0px;
     color: #FFF;
 }
-/*Banner para la Historia */
+/*Banner*/
 
 body {
-    padding: 14% 15%;
+    padding: 0 15%;
     background: url(../imagenes/guardianes.jpg) no-repeat center;
     background-size: cover;
     color: #fff;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
+}
+
+section {
+    flex: 1; 
 }
 
 form{
@@ -89,22 +94,24 @@ form{
 
 /*PIE DE PAGINA*/
 .footer {
+   
     color: #d5d5d5;
-    position: fixed;
-    width: auto;
-    bottom: 0;
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+    margin-top: auto;
     padding: 1.5em 0em;
     border-top: 1px solid #303030;
-    text-align: center;
 }
 
 .footer .contenedor {
-    width: auto;
+    max-width: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .footer p {

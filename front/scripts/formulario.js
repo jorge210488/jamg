@@ -1,5 +1,6 @@
 const axios = require("axios");
 const val = require("./validation.js");
+const limpiarForm = require("./limpiarForm.js");
 
 const soloFormulario = () => { 
     document.addEventListener("DOMContentLoaded", () => {
@@ -29,9 +30,6 @@ const soloFormulario = () => {
         } catch (error) {
             if (error.response) {
                 const middleMensaje = error.response.data.message + ": " + error.response.data.missingInputs.join(", ") + "\n" + error.response.data.validationErrors.join("\n");
-                
-                console.error("Error al agregar la película:", middleMensaje);
-    
                 alert(`${middleMensaje}`);
             } else {
                 console.error("Error inesperado:", error);
@@ -42,5 +40,19 @@ const soloFormulario = () => {
     });
 });
 };
+
+
+//Implementar una función que maneje el evento de limpieza del formulario y se encargue de seleccionar y vaciar el value de los inputs.
+const title = document.getElementById("title");
+const year = document.getElementById("year");
+const director = document.getElementById("director");
+const duration = document.getElementById("duration");
+const genre = document.getElementById("genre");
+const rate = document.getElementById("rate");
+const poster = document.getElementById("poster");
+
+const clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", () => limpiarForm(title, year, director, duration, rate, genre, poster));
+
 
 module.exports = soloFormulario;

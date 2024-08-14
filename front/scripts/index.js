@@ -18,7 +18,6 @@ const traerData = async () => {
 
 
 const traerTarjeta = require("./tarjeta.js");
-console.log(traerTarjeta);
 
 traerData();
 
