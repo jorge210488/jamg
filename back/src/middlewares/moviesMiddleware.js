@@ -17,6 +17,11 @@ function validateDataMovie(req, res, next) {
         if (!movie[key]) missingInputs.push(key);
     }
 
+    // Verifica que el título no tenga más de 70 caracteres
+    if (movie.title && movie.title.length > 70) {
+        validationErrors.push("El título no debe tener más de 70 caracteres.");
+    }
+
     // Verifica que year no tenga más de 4 dígitos, no sea menor a 1895, y no sea mayor a 2024
     if (movie.year && (!/^\d{4}$/.test(movie.year) || movie.year < 1895 || movie.year > 2024)) {
         validationErrors.push("El año debe tener 4 dígitos, no ser menor a 1895 y no ser mayor a 2024.");
@@ -40,6 +45,11 @@ function validateDataMovie(req, res, next) {
     // Verifica que genre no contenga números
     if (movie.director && /\d/.test(movie.director)) {
         validationErrors.push("El Nombre del director no debe contener números.");
+    }
+
+    // Verifica que la duración tenga el formato correcto
+    if (movie.duration && !/^\d+h \d{1,2}min$/.test(movie.duration)) {
+        validationErrors.push("La duración debe tener el formato 'XXh Ymin', por ejemplo, '1h 58min'.");
     }
 
     // Enviar los errores si los hay
